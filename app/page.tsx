@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="flex bg-stone-300 m-8 shadow-md rounded-md text-stone-800">
+      <div className="flex flex-wrap bg-stone-300 m-8 shadow-md rounded-md text-stone-800">
         <div className="flex-1 p-4">
           <h1 className="text-3xl font-bold mb-4">Need rocks?</h1>
           <p className="text-base mb-4">
@@ -23,7 +23,7 @@ export default function Home() {
             quick turnaround times. Let&apos;s build something great together!
           </p>
         </div>
-        <div className="p-4 flex-shrink-0">
+        <div className="p-4 flex-shrink-0 relative h-full max-w-full" >
           <Image
             className="rounded-md"
             src="/images/rocks.jpg"
@@ -34,8 +34,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex bg-stone-300 mx-8 mb-8 shadow-md rounded-md text-stone-800">
-        <div className="p-4 flex-shrink-0">
+      <div className="flex flex-wrap bg-stone-300 mx-8 mb-8 shadow-md rounded-md text-stone-800">
+        <div className="p-4 flex-shrink-0 h-full max-w-full">
           <Image
             className="rounded-md"
             src="/images/construction.jpg"

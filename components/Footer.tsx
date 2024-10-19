@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div className="bottom-0 flex flex-col items-center w-full bg-stone-700 text-stone-200 shadow-xl p-4">
-      <div className="w-full flex justify-around mb-4">
+      <div className="w-full flex justify-around mb-4 flex-wrap">
         <div>
           <h2 className="font-bold mb-2">Quick Links</h2>
           <ul>
@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <div>
           <h2 className="font-bold mb-2">Follow Us</h2>
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-4 flex-wrap">
             <li>Facebook</li>
             <li>Twitter</li>
             <li>Instagram</li>
