@@ -2,100 +2,129 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <div className="flex bg-stone-300 m-8 shadow-md rounded-md text-stone-800">
+        <div className="flex-1 p-4">
+          <h1 className="text-3xl font-bold mb-4">Need rocks?</h1>
+          <p className="text-base mb-4">
+            Well you are in the right place then. We offer a wide variety of
+            rocks and minerals for all your construction and landscaping needs.
+            Whether you&apos;re looking for gravel, sandstone, or marble,
+            we&apos;ve got you covered.
+          </p>
+          <p className="text-base mb-4">
+            Our extensive inventory ensures that you will find exactly what you
+            need for your project. Our team of experts is always available to
+            provide guidance and support to help you make the best choice.
+          </p>
+          <p className="text-base">
+            Feel free to reach out to us with any questions or to place an
+            order. We pride ourselves on our exceptional customer service and
+            quick turnaround times. Let&apos;s build something great together!
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="p-4 flex-shrink-0">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            className="rounded-md"
+            src="/images/rocks.jpg"
+            alt="Rocks"
+            width={480}
+            height={640}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </div>
+      </div>
+
+      <div className="flex bg-stone-300 mx-8 mb-8 shadow-md rounded-md text-stone-800">
+        <div className="p-4 flex-shrink-0">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            className="rounded-md"
+            src="/images/construction.jpg"
+            alt="Construction"
+            width={480}
+            height={640}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+        <div className="flex-1 p-4">
+          <h1 className="text-3xl font-bold mb-4">Our Quality Promise</h1>
+          <p className="text-base mb-4">
+            Quality is our hallmark. We go to great lengths to source the finest
+            rocks and minerals, ensuring every piece meets our rigorous
+            standards. Whether you need materials for landscaping, construction,
+            or artistic projects, you can trust us to deliver exceptional
+            quality every time.
+          </p>
+          <p className="text-base mb-4">
+            Our knowledgeable staff is passionate about what they do and are
+            always ready to help you select the best products for your needs. We
+            believe in building lasting relationships with our customers by
+            providing not only great products but also unmatched service and
+            support.
+          </p>
+          <p className="text-base">
+            Discover the difference that quality makes. From start to finish,
+            we&apos;re committed to helping you achieve your goals with the best
+            materials available. Reach out to us today and let us be part of
+            your next big project!
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-stone-300 m-8 shadow-md rounded-md text-stone-800">
+        <h1 className="text-3xl font-bold mb-4 text-center p-4">Pricing</h1>
+        <div className="flex flex-wrap justify-between">
+          <div className="flex-1 m-4 p-4 bg-stone-100 rounded-md">
+            <h2 className="text-2xl font-bold mb-2">Gravel</h2>
+            <ul className="list-disc list-inside">
+              <li className="text-base mb-2">Starting from $50 per ton</li>
+              <li className="text-base mb-2">Bulk pricing available</li>
+              <li className="text-base mb-2">Available in various sizes</li>
+            </ul>
+          </div>
+          <div className="flex-1 m-4 p-4 bg-stone-100 rounded-md">
+            <h2 className="text-2xl font-bold mb-2">Sandstone</h2>
+            <ul className="list-disc list-inside">
+              <li className="text-base mb-2">Starting from $70 per ton</li>
+              <li className="text-base mb-2">Custom cuts and sizes</li>
+              <li className="text-base mb-2">Ideal for paving and walls</li>
+            </ul>
+          </div>
+          <div className="flex-1 m-4 p-4 bg-stone-100 rounded-md">
+            <h2 className="text-2xl font-bold mb-2">Marble</h2>
+            <ul className="list-disc list-inside">
+              <li className="text-base mb-2">Starting from $100 per ton</li>
+              <li className="text-base mb-2">Premium quality and finish</li>
+              <li className="text-base mb-2">Perfect for countertops</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap justify-between">
+          <div className="flex-1 m-4 p-4 bg-stone-100 rounded-md">
+            <h2 className="text-2xl font-bold mb-2">Granite</h2>
+            <ul className="list-disc list-inside">
+              <li className="text-base mb-2">Starting from $90 per ton</li>
+              <li className="text-base mb-2">Available in multiple colors</li>
+              <li className="text-base mb-2">Durable and versatile</li>
+            </ul>
+          </div>
+          <div className="flex-1 m-4 p-4 bg-stone-100 rounded-md">
+            <h2 className="text-2xl font-bold mb-2">Limestone</h2>
+            <ul className="list-disc list-inside">
+              <li className="text-base mb-2">Starting from $60 per ton</li>
+              <li className="text-base mb-2">Great for building and paving</li>
+              <li className="text-base mb-2">Easy to cut and shape</li>
+            </ul>
+          </div>
+          <div className="flex-1 m-4 p-4 bg-stone-100 rounded-md">
+            <h2 className="text-2xl font-bold mb-2">Slate</h2>
+            <ul className="list-disc list-inside">
+              <li className="text-base mb-2">Starting from $80 per ton</li>
+              <li className="text-base mb-2">Ideal for roofing and flooring</li>
+              <li className="text-base mb-2">Available in various shades</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
